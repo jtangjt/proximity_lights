@@ -7,6 +7,7 @@ import time
 import os
 import datetime
 
+# Yea none of this stuff works in python3 so i'll rewriet it later.
 def bluetooth_rssi(addr):
     # Open hci socket
     hci_sock = bt.hci_open_dev()
@@ -106,6 +107,6 @@ while True:
     else:
         far_count = 0
 
-    
+    # original guy had this backwards so i fixed it.
     rssi_prev1 = rssi
     rssi_prev2 = rssi_prev1
